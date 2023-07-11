@@ -1,0 +1,7 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test same-file 1.0.6 --all-targets --all-features
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test same-file 1.0.6 --all-targets --no-default-features
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev, librust-same-file-dev
+Restrictions: allow-stderr, skip-not-installable
